@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minte"
+dynamic = ["version", "dependencies"]
+description = "Malaria INtervention Tool Emulator"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Cosmo Santoni", email = "cosmo.santoni@imperial.ac.uk"},
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Homepage = "https://github.com/CosmoNaught/minte"
+Documentation = "https://github.com/CosmoNaught/minte#readme"
+Repository = "https://github.com/CosmoNaught/minte"
+Issues = "https://github.com/CosmoNaught/minte/issues"
+
+[project.scripts]
+minte = "minte.cli:main"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["minte*"]
+exclude = ["tests*"]

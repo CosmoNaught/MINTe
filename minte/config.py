@@ -32,7 +32,7 @@ class Config:
     epochs: int = 64
     learning_rate: float = 1e-3
     weight_decay: float = 1e-1
-    batch_attensize: int = 4096
+    batch_size: int = 1024
     patience: int = 16
     num_workers: int = 0
     device: Optional[str] = None

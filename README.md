@@ -78,7 +78,7 @@ predictions = forecaster.predict(data)
 
 ## Documentation (COMING SOON!)
 
-For detailed documentation, see the [docs](docs/) directory.
+For detailed documentation, see the [docs](docs/installation_guide.md) directory.
 
 ## License
 

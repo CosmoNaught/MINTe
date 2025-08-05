@@ -177,7 +177,6 @@ cases/
 
 # Model checkpoints
 checkpoints/
-models/
 
 # Custom
 .scratch/
